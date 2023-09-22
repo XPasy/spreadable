@@ -19,8 +19,21 @@
         </div>
         <div id="btns" class="btns">
             <div class="btn">Получить спред</div>
-            <div class="btn">Поменять процент спреда</div>
-            <div class="btn"><a href="https://xpasy.github.io/status/">Статус аккаунта</a></div>
+            <div class="btn" onclick="show_change()">Поменять процент спреда</div>
+            <div class="btn"><a href="status.html">Статус аккаунта</a></div>
+        </div>
+        <div class="change none">
+            <div class="exit" onclick="show_change()"></div>
+            <div class="change-popup">
+                <div class="change-header">
+                    <img class="change-logo" src="https://spreadable.baliev.ru/assets/delta.94bc33a6.png" alt="">
+                    <div class="change-title">Sreadable</div>
+                </div>
+                <div id="change-text" class="change-text">Текущий спред: 0%</div>
+                <input maxlength="4" placeholder="Введите спред" class="change-input" type="text">
+                <button class="change-btn save" id="save" onclick="save_spread()">Сохранить</button>
+                <button class="change-btn exit-change" id="exit-change" onclick="show_change()">Закрыть</button>
+            </div>
         </div>
     </div>
 
