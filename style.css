@@ -22,7 +22,7 @@ body{
 
 .balance{
     margin-bottom: 3vmin;
-    font-size: 3vmin;
+    font-size: 5vmin;
 }
 
 .text{
@@ -35,7 +35,7 @@ body{
 }
 
 .money span{
-    font-size: 4.5vmin;
+    font-size: 6.5vmin;
 }
 
 .btns{
@@ -51,7 +51,7 @@ body{
     /* background-color: #f3692a; */
     border-radius: 0.5vmin;
     letter-spacing: normal;
-    font-size: 2vmin;
+    font-size: 5vmin;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -66,4 +66,30 @@ body{
 
 .btn:hover{
     background-color: #f3692a30;
+}
+
+.btn:active{
+    background-color: #f3692a60;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+.title{
+    display: flex;
+    align-items: center;
+    top: 50%;
+    transform: translateY(-30%);
+    margin-left: 2vmin;
+}
+
+.logo{
+    width: 10vmin;
+    height: 10vmin;
+    margin-bottom: 5vmin;
 }
