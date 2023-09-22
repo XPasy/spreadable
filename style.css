@@ -94,6 +94,11 @@ body{
 
 .btn:active{
     background-color: #f3692a60;
+    transform: scale(0.95);
+}
+
+.btn a{
+    width: 100%;
 }
 
 .header{
