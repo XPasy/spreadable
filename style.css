@@ -16,18 +16,44 @@ body{
     height: 100vh;
     background-color: #121212;
     box-shadow: 0vmin 0vmin 2vmin #000;
-    padding: 4vmin;
     letter-spacing: 0.4vmin;
+    padding: 4vmin 0 4vmin 0;
 }
 
 .balance{
     margin-bottom: 3vmin;
     font-size: 5vmin;
+    position: relative;
+    padding: 2vmin 0 2vmin 0;
+}
+
+.balance::before{
+    content: '';
+    position: absolute;
+    top: -1vmin;
+    left: 0;
+    width: 100%;
+    height: 0.2vmin;
+    background-color: #ff5100;
+    box-shadow: 0 0 1vmin #ff5100;
+}
+
+.balance::after{
+    content: '';
+    position: absolute;
+    bottom: -1vmin;
+    left: 0;
+    width: 100%;
+    height: 0.2vmin;
+    background-color: #ff5100;
+    box-shadow: 0 0 1vmin #ff5100;
 }
 
 .text{
     margin-bottom: 1vmin;
+    font-size: 6vmin;
 }
+
 
 .money{
     font-family: 'barlow', sans-serif;
@@ -49,6 +75,7 @@ body{
 
 .btn{
     /* background-color: #f3692a; */
+    width: 90%;
     border-radius: 0.5vmin;
     letter-spacing: normal;
     font-size: 5vmin;
@@ -58,6 +85,7 @@ body{
     align-items: center;
     padding: 1vmin;
     transition: all 0.2s ease;
+    margin: 0 auto;
 }
 
 .active{
@@ -81,6 +109,7 @@ body{
 }
 
 .title{
+    font-size: 5vmin;
     display: flex;
     align-items: center;
     top: 50%;
